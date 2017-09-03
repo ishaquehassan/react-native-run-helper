@@ -2,7 +2,8 @@
 
 IF NOT EXIST "index.android.js" (
 set /p pathString= "Please Enter React Native Project Path:"
-%pathString:~0%:
+set pathString = "%pathString%"
+%pathString:~0,1%:
 cd "%pathString%"
 )
 

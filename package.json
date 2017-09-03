@@ -1,22 +1,22 @@
 {
   "name": "react-native-run-helper",
-  "version": "1.0.0",
-  "description": "A Clean build helper batch file for windows",
-  "main": "]rnrun.bat",
+  "version": "1.1",
+  "description": "A React Native Run Helper for android",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "rnrun": "rnrun.bat"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ishaquehassan/react-native-run-helper.git"
   },
-  "keywords": [
-    "react-native-run-helper"
-  ],
   "author": "Ishaq Hassan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ishaquehassan/react-native-run-helper/issues"
   },
-  "homepage": "https://github.com/ishaquehassan/react-native-run-helper#readme"
+  "homepage": "https://github.com/ishaquehassan/react-native-run-helper#readme",
+  "preferGlobal": true
 }
