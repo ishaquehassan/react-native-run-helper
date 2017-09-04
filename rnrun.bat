@@ -3,7 +3,7 @@
 IF NOT EXIST "index.android.js" (
 IF "%pathString%"=="" (
   set /p pathString= "Please Enter React Native Project Path:"
-  rr
+  rnrun
 )
 cd  /D "%pathString%"
 )
