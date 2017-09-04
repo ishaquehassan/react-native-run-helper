@@ -9,11 +9,11 @@ cd  /D "%pathString%"
 )
 
 IF "%1" == "clean" (
-cd android && gradlew clean
+cd android && gradlew clean && cd ..
 ) 
 
 IF "%1" == "build-release" (
-cd android && gradlew clean && gradlew assembleRelease
+cd android && gradlew clean && gradlew assembleRelease && cd ..
 )
 
-cd .. && react-native run-android
+react-native run-android
