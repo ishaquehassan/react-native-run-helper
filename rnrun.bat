@@ -25,3 +25,5 @@ IF "%1" == "show-apks" (
 IF NOT "%2" == "not-run" (
 react-native run-android
 )
+
+set pathString= ""
