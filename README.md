@@ -5,9 +5,12 @@
 
 **Usage**
 ---------
-   Simple run on android
+
+Simple run on android
 
     rnrun
+Or
+    rnrun [option]
 
 Run with clean project
 
@@ -16,3 +19,11 @@ Run with clean project
 Assemble Release APK (It Will Clean It too, so no need for clean here)
 
     rnrun build-release
+
+Open Apks Dir
+
+    rnrun show-apks
+
+To Prevent run with any option
+
+    rnrun [option] not-run
