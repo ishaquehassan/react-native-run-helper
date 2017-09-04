@@ -1,10 +1,11 @@
-@echo off
+@ECHO off
 
 IF NOT EXIST "index.android.js" (
-set /p pathString= "Please Enter React Native Project Path:"
-set pathString = "%pathString%"
-%pathString:~0,1%:
-cd "%pathString%"
+IF "%pathString%"=="" (
+  set /p pathString= "Please Enter React Native Project Path:"
+  rr
+)
+cd  /D "%pathString%"
 )
 
 IF "%1" == "clean" (
