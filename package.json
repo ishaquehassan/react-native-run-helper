@@ -1,6 +1,6 @@
 {
   "name": "react-native-run-helper",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "A React Native Run Helper for android",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +18,6 @@
     "url": "https://github.com/ishaquehassan/react-native-run-helper/issues"
   },
   "homepage": "https://github.com/ishaquehassan/react-native-run-helper#readme",
-  "preferGlobal": true
+  "preferGlobal": true,
+  "os" : [ "win32" ]
 }
