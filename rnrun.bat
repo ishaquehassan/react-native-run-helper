@@ -16,12 +16,20 @@ cd android && gradlew clean && cd ..
 
 IF "%1" == "build-release" (
 cd android && gradlew clean && gradlew assembleRelease
-%SystemRoot%\explorer.exe "%newPath%\android\app\build\outputs\apk"
+	IF EXIST "index.android.js"  (
+	%SystemRoot%\explorer.exe "%cd%\android\app\build\outputs\apk"
+	) ELSE (
+	%SystemRoot%\explorer.exe "%newPath%\android\app\build\outputs\apk"
+	)
 cd ..
 )
 
 IF "%1" == "show-apks" (
-%SystemRoot%\explorer.exe "%newPath%\android\app\build\outputs\apk"
+	IF EXIST "index.android.js" (
+	%SystemRoot%\explorer.exe "%cd%\android\app\build\outputs\apk"
+	) ELSE (
+	%SystemRoot%\explorer.exe "%newPath%\android\app\build\outputs\apk"
+	)
 )
 
 IF NOT "%2" == "not-run" (
