@@ -10,8 +10,11 @@ Simple run on android
 
     rnrun
 Or
-    
+
     rnrun [option]
+
+**Oprions**
+---------
 
 Run with clean project
 
