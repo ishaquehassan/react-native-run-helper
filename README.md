@@ -10,6 +10,7 @@ Simple run on android
 
     rnrun
 Or
+    
     rnrun [option]
 
 Run with clean project
